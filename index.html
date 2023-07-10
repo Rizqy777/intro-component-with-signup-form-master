@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Frontend Mentor | Intro component with sign up form</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="container_description">
+        <h1 class="title">Learn to code by watching others</h1>
+        <p class="text">
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </div>
+      <div class="container_try">
+        Try it free 7 days
+        <span class="try_span"> then $20/mo. thereafter</span>
+      </div>
+      <div class="form_container">
+        <!-- <form id="my-form"  method="POST" novalidate> -->
+
+        <input
+          class="input_name input"
+          type="text"
+          id="first-name"
+          name="first-name"
+          placeholder="First name"
+          required
+        />
+        <span id="error-name" class="span_container"
+          >First Name cannot be empty</span
+        >
+
+        <input
+          class="input_surname input"
+          type="text"
+          id="last-name"
+          name="last-name"
+          placeholder="Last Name"
+          required
+        />
+        <span id="error-surname" class="span_container"
+          >Last Name cannot be empty</span
+        >
+
+        <input
+          class="input_email input"
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Email"
+        />
+        <span id="error-email" class="span_container"
+          >Looks like this is not an email</span
+        >
+
+        <input
+          class="input_password input"
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Password"
+          required
+        />
+        <span id="error-password" class="span_container"
+          >Password cannot be empty</span
+        >
+
+        <input
+          class="submit_button"
+          type="submit"
+          value="CLAIM YOUR FREE TRIAL"
+        />
+        <!-- </form> -->
+        <footer class="footer_container">
+          <!-- Claim your free trial  -->
+
+          <p class="footer_text">
+            By clicking the button, you are agreeing to our
+            <span class="span_footer">Terms and Services</span>
+          </p>
+        </footer>
+      </div>
+
+      <div class="container_next">
+        <h2>
+          Thank you for registering, shortly you will receive an email in "
+          <span class="email_address"></span> " so you can activate your account
+          and start enjoying the services, welcome.
+        </h2>
+      </div>
+    </main>
+    <!--   
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </p>
+  </footer> -->
+    <script src="index.js"></script>
+  </body>
+</html>
